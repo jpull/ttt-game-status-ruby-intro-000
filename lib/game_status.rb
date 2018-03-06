@@ -32,6 +32,7 @@ def won?(board)
 
       puts "win_combination #{win_combination}"
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
+        puts "winner"
         return win_combination # return the win_combination indexes that won.
       else
         false
