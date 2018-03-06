@@ -20,3 +20,11 @@ def won?(board)
     WIN_COMBINATIONS.include?(board)
   end
 end
+
+def full?(board)
+  if board.any?{|i| i == " "}
+    false
+  else
+    true
+  end
+end
