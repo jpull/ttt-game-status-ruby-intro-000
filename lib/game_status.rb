@@ -18,6 +18,7 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
+  puts "board #{board}"
   if board.any?{|i| i == "X"} || board.any?{|i| i == "0"}
     WIN_COMBINATIONS.each do |win_combination|
       # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
