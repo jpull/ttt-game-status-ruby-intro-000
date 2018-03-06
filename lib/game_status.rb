@@ -40,10 +40,7 @@ end
 end
 
 puts "Input won? Board:"
-won?(gets)
-won?(gets)
-won?(gets)
-won?(gets)
+won?(["X", "X", "X", " ", " ", " ", " ", " ", " "])
 
 def full?(board)
   board.none?{|i| i == " "}
