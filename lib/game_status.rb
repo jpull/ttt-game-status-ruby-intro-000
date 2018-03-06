@@ -69,7 +69,7 @@ def winner(board)
   elsif win_combination.length > 3
     puts "flase length"
     return false
-    
+
   else
     win_index_1 = win_combination[0]
     position_1 = board[win_index_1]
@@ -77,4 +77,4 @@ def winner(board)
   end
 end
 
-winner([" ", "X", "X", "O", " ", " ", "O", " ", " "])
+winner(["X", "X", "X", "O", " ", " ", "O", " ", " "])
