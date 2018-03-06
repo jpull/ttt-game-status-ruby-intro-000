@@ -19,6 +19,6 @@ def won(board)
 #  if board.any?{|i| i != " "}
 #    WIN_COMBINATIONS.include?(board)
 #  else
-    return false
+    false
   #end
 end
