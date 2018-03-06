@@ -17,8 +17,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   if board.any?{|i| i == "X"} || board.any?{|i| i == "0"}
-    false
-  else
     WIN_COMBINATIONS.each do |win_combination|
   # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
   # grab each index from the win_combination that composes a win.
@@ -41,6 +39,8 @@ puts "position_1 #{position_1} position_2 #{position_2} position_3 #{position_3}
   end
 end
 end
+else
+  false
 end
 
 puts "Input won? Board:"
