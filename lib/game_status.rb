@@ -20,6 +20,7 @@ def won?(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
     puts "Start"
     WIN_COMBINATIONS.each do |i|
       puts "combo #{i}"
+      puts "board1 #{board[i[0]]}"
       if board[i[0]] != " " && board[i[1]] != " " && board[i[2]] != " "
         winner = i
         puts "winner: #{board}"
