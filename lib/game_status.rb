@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-won?(["O", " ", "X", "O", " ", "X", "O", " ", " "])
+
 
 def won?(board)
   if board.any?{|i| i == "X"} || board.any?{|i| i == "0"}
@@ -40,6 +40,8 @@ def won?(board)
 else
   false
 end
+
+won?(["O", " ", "X", "O", " ", "X", "O", " ", " "])
 
 def full?(board)
   board.none?{|i| i == " "}
