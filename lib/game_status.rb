@@ -16,5 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won(board)
-  WIN_COMBINATIONS.find{|i| i = board} #=> 1
+  if !board
+    return false
+  else
+    WIN_COMBINATIONS.find{|i| i = board} #=> 1
+  end
 end
