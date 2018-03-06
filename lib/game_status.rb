@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
-  if board.any?{|i| i != " "}
+  #if board.any?{|i| i != " "}
     puts "Start"
     WIN_COMBINATIONS.each do |i|
       puts "combo #{i}"
@@ -26,7 +26,7 @@ def won?(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
       end
     end
     i
-  end
+  #end
 end
 
 puts "Input won? Board:"
