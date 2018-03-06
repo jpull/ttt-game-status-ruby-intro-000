@@ -41,8 +41,6 @@ def won?(board)
   end
 end
 
-won?(["O", " ", "X", "O", " ", "X", "O", " ", " "])
-
 def full?(board)
   board.none?{|i| i == " "}
 end
@@ -63,4 +61,7 @@ end
 
 def winner(board)
   win_combination = won?(board)
+  puts "win_combination #{win_combination}"
 end
+
+winner(["O", " ", "X", "O", " ", "X", "O", " ", " "])
