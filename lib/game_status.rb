@@ -51,13 +51,7 @@ def over?(board)
 end
 
 def winner(board)
-  win_combination = won?(board)
-  if !win_combination
-    return nil
-  elsif win_combination.length > 3
-    return nil
-  else
-    win_index_1 = win_combination[0]
-    position_1 = board[win_index_1]
+  if winning_combo = won?(board)
+    board[winning_combo.first]
   end
 end
