@@ -52,6 +52,7 @@ def won?(board = ["X", " ", " ", " ", " ", " ", " ", " ", " "])
   if position_1 == "X" && position_2 == "X" && position_3 == "X"
     puts win_combination # return the win_combination indexes that won.
   else
+    puts "FALSE"
     false
   end
 end
