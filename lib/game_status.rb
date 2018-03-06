@@ -22,6 +22,7 @@ def won?(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
       puts "combo #{i}"
       if board[i[0]] != " " && board[i[1]] != " " && board[i[2]] != " "
         winner = i
+        puts "winner"
         break
       end
     end
