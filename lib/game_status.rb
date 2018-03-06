@@ -71,4 +71,4 @@ def winner(board)
   end
 end
 
-winner([" ", " ", " ", " ", " ", " ", " ", " ", " "])
+winner(["X", "X", "X", " ", " ", " ", " ", " ", " "])
