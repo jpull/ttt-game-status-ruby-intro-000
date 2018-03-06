@@ -62,7 +62,7 @@ end
 def winner(board)
   win_combination = won?(board)
   if !win_combination
-    return "false"
+    puts "false"
     return false
   else
     win_index_1 = win_combination[0]
