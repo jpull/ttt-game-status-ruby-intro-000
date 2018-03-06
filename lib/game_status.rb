@@ -15,30 +15,9 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-def won?(board = ["X", " ", " ", " ", " ", " ", " ", " ", " "])
-
-
-  #if board.any?{|i| i != " "}
-    puts "Start"
-    WIN_COMBINATIONS.each do |i|
-      puts "combo #{i}"
-      a = i[0]
-      b = i[1]
-      c = i[2]
-      puts "board #{board}"
-      puts "board0 #{board[0]}"
-      puts "a b c #{a} #{b} #{c}"
-      puts "board abc #{board[a]} #{board[b]} #{board[c]}"
-      puts "board i012 #{board[i[0]]} #{board[i[1]]} #{board[i[2]]}"
-      if board[i[0]] != " " && board[i[1]] != " " && board[i[2]] != " "
-        winner = i
-        puts "winner: #{board}"
-        break
-      end
-    end
-  #end
-
-  WIN_COMBINATIONS.each do |win_combination|
+def won?(board)
+  if board.any?{|i| i != " "}
+    WIN_COMBINATIONS.each do |win_combination|
   # win_combination is a 3 element array of indexes that compose a win, [0,1,2]
   # grab each index from the win_combination that composes a win.
   win_index_1 = win_combination[0]
@@ -50,6 +29,7 @@ def won?(board = ["X", " ", " ", " ", " ", " ", " ", " ", " "])
   position_3 = board[win_index_3] # load the value of the board at win_index_3
 puts "START2"
 puts "win_comb #{win_combination}"
+puts "position_1 #{position_1} position_2 #{position_2} position_3 #{position_3}"
   if position_1 == "X" && position_2 == "X" && position_3 == "X"
     puts win_combination # return the win_combination indexes that won.
   else
