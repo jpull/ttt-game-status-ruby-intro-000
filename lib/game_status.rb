@@ -29,7 +29,8 @@ def won?(board)
   end
 end
 
-gets
+puts "Input won? Board:"
+won?(gets)
 
 def full?(board)
   board.none?{|i| i == " "}
