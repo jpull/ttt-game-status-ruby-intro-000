@@ -17,9 +17,12 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   if board.any?{|i| i != " "}
+    puts "Start"
     WIN_COMBINATIONS.each do |i|
+      puts i
       if board[i[0]] != " " && board[i[1]] != " " && board[i[2]] != " "
         winner = i
+        puts "Winner"
       end
     end
   end
