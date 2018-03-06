@@ -67,5 +67,3 @@ def winner(board)
     position_1 = board[win_index_1]
   end
 end
-
-#winner(["X", "X", "X", "O", " ", " ", "O", " ", " "])
