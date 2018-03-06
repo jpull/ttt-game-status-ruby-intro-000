@@ -65,11 +65,10 @@ def winner(board)
   puts "win_combination #{win_combination.length}"
   if !win_combination
     puts "false"
-    return false
+    return nil
   elsif win_combination.length > 3
     puts "flase length"
-    return false
-
+    return nil
   else
     win_index_1 = win_combination[0]
     position_1 = board[win_index_1]
