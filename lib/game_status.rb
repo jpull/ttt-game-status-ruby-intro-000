@@ -25,6 +25,7 @@ def won?(board)
         break
       end
     end
+    winner
   end
 end
 
