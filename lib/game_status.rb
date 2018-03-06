@@ -16,5 +16,5 @@ WIN_COMBINATIONS = [
 ]
 
 def won(board)
-  WIN_COMBINATIONS.find{|i| board} #=> 1
+  WIN_COMBINATIONS.find{|i| i = board} #=> 1
 end
