@@ -67,7 +67,7 @@ def winner(board)
   else
     win_index_1 = win_combination[0]
     position_1 = board[win_index_1]
-    puts "Winner"
+    puts "Winner #{position_1}"
   end
 end
 
