@@ -30,7 +30,7 @@ def won?(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
 end
 
 puts "Input won? Board:"
-won?
+won?(gets)
 won?(gets)
 won?(gets)
 won?(gets)
