@@ -61,6 +61,7 @@ end
 
 def winner(board)
   win_combination = won?(board)
+  puts "win_combination #{win_combination}"
   if !win_combination
     puts "false"
     return false
