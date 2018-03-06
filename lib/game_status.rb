@@ -31,6 +31,9 @@ end
 
 puts "Input won? Board:"
 won?(gets)
+won?(gets)
+won?(gets)
+won?(gets)
 
 def full?(board)
   board.none?{|i| i == " "}
