@@ -65,4 +65,4 @@ def winner(board)
   position_1 = board[win_index_1]
 end
 
-
+winner([" ", " ", " ", " ", " ", " ", " ", " ", " "])
