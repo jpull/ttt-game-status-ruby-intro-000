@@ -37,8 +37,6 @@ def won?(board)
       end
     end
   end
-else
-  false
 end
 
 won?(["O", " ", "X", "O", " ", "X", "O", " ", " "])
