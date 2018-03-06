@@ -24,3 +24,11 @@ end
 def full?(board)
   board.none?{|i| i == " "}
 end
+
+def draw?(board)
+  if full?(board)
+    if !won?(board)
+      true
+    end
+  end
+end
