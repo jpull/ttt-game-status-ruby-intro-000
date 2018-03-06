@@ -23,7 +23,11 @@ def won?(board = ["X", " ", " ", " ", " ", " ", " ", " ", " "])
       a = i[0]
       b = i[1]
       c = i[2]
-      puts "board1 #{board} #{board[0]} #{a} #{b} #{c} #{board[a]} #{board[b]} #{board[c]}"
+      puts "board #{board}"
+      puts "board0 #{board[0]}"
+      puts "a b c #{a} #{b} #{c}"
+      puts "board abc #{board[a]} #{board[b]} #{board[c]}"
+      puts "board i012 #{board[i[0]]} #{board[i[1]]} #{board[i[2]]}"
       if board[i[0]] != " " && board[i[1]] != " " && board[i[2]] != " "
         winner = i
         puts "winner: #{board}"
