@@ -28,9 +28,10 @@ def won?(board)
   position_2 = board[win_index_2] # load the value of the board at win_index_2
   position_3 = board[win_index_3] # load the value of the board at win_index_3
 puts "START2"
-puts "win_comb #{win_combination}"
+puts "win_combination #{win_combination}"
 puts "position_1 #{position_1} position_2 #{position_2} position_3 #{position_3}"
   if position_1 == "X" && position_2 == "X" && position_3 == "X"
+    puts "win: #{win_combination}"
     return win_combination # return the win_combination indexes that won.
   else
     puts "FALSE"
