@@ -29,6 +29,8 @@ def won?(board)
   end
 end
 
+gets
+
 def full?(board)
   board.none?{|i| i == " "}
 end
