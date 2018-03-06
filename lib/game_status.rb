@@ -61,9 +61,13 @@ end
 
 def winner(board)
   win_combination = won?(board)
-  win_index_1 = win_combination[0]
-  position_1 = board[win_index_1]
-  puts "Winner"
+  if !win_combination
+    return false
+  else
+    win_index_1 = win_combination[0]
+    position_1 = board[win_index_1]
+    puts "Winner"
+  end
 end
 
 winner([" ", " ", " ", " ", " ", " ", " ", " ", " "])
