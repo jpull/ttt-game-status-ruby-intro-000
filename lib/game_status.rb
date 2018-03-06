@@ -66,6 +66,10 @@ def winner(board)
   if !win_combination
     puts "false"
     return false
+  elsif win_combination.length > 3
+    puts "flase length"
+    return false
+    
   else
     win_index_1 = win_combination[0]
     position_1 = board[win_index_1]
