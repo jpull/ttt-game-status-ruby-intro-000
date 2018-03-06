@@ -38,6 +38,7 @@ puts "position_1 #{position_1} position_2 #{position_2} position_3 #{position_3}
   end
 end
 end
+end
 
 puts "Input won? Board:"
 won?(gets)
