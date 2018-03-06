@@ -61,13 +61,9 @@ end
 
 def winner(board)
   win_combination = won?(board)
-  puts "win_combination #{win_combination}"
-  puts "win_combination #{win_combination.length}"
   if !win_combination
-    puts "false"
     return nil
   elsif win_combination.length > 3
-    puts "flase length"
     return nil
   else
     win_index_1 = win_combination[0]
