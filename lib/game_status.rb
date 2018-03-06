@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-def won?(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
+def won?(board = ["X", " ", " ", " ", " ", " ", " ", " ", " "])
   #if board.any?{|i| i != " "}
     puts "Start"
     WIN_COMBINATIONS.each do |i|
