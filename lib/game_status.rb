@@ -55,6 +55,7 @@ def won?(board = ["X", " ", " ", " ", " ", " ", " ", " ", " "])
     false
   end
 end
+end
 
 puts "Input won? Board:"
 won?(gets)
